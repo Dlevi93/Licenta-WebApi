@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <OutputType>Exe</OutputType>
+    <WebProjectMode>true</WebProjectMode>
+    <AssemblyName>Proiect.Web</AssemblyName>
+    <Authors>Levente Deak</Authors>
+    <Company>Levente Deak</Company>
+    <Product></Product>
+    <Copyright></Copyright>
+    <RootNamespace>Proiect.Web</RootNamespace>
+    <Version>1.0.2</Version>
+    <UserSecretsId>eaa13559-ee3b-444d-b22f-d6eedba3d543</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" PrivateAssets="all" Version="6.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" PrivateAssets="All" Version="6.0.5" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.161" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Proiect.Core\Proiect.Core.csproj" />
+    <ProjectReference Include="..\Proiect.Infrastructure\Proiect.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+</Project>
