@@ -1,4 +1,4 @@
-Proiect Medii de programare
+Licenta-WebApi
 Levente Deak
 Anul III
 Gr. 2
